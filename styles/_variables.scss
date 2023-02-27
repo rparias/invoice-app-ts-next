@@ -12,6 +12,12 @@ $black-grey: #1e2139 !default;
 $red: #ec5757 !default;
 $light-red: #ff9797 !default;
 
+// font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.25 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
 
 // export to use directly in modules
 :export {
@@ -19,13 +25,13 @@ $light-red: #ff9797 !default;
   darkBg: $dark;
   white: $white;
   black: $black;
-  purple:$purple;
-  lightPurple:$light-purple;
-  softPurple:$soft-purple;
-  grey:$grey;
-  lightGrey:$light-grey;
-  darkGrey:$dark-grey;
-  blackGrey:$black-grey;
-  red:$red;
-  lightRed:$light-red;
+  purple: $purple;
+  lightPurple: $light-purple;
+  softPurple: $soft-purple;
+  grey: $grey;
+  lightGrey: $light-grey;
+  darkGrey: $dark-grey;
+  blackGrey: $black-grey;
+  red: $red;
+  lightRed: $light-red;
 }
