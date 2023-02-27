@@ -1,0 +1,12 @@
+$light: #f8f8f8 !default;
+$dark: #141625 !default;
+$white: #ffffff !default;
+$black: #0c0e16 !default;
+
+// export to use directly in modules
+:export {
+  lightBg: $light;
+  darkBg: $dark;
+  white: $white;
+  black: $black;
+}
