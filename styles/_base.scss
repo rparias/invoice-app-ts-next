@@ -38,6 +38,34 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  letter-spacing: -1px;
+  line-height: 36px;
+  font-size: $font-size-xl;
+}
+
+h2 {
+  letter-spacing: -0.63px;
+  line-height: 22px;
+  font-size: $font-size-lg;
+}
+
+h3 {
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  font-size: $base-font-size;
+}
+
+h4 {
+  letter-spacing: -0.25px;
+  line-height: 15px;
+  font-size: $font-size-sm;
+}
+
 @include darkMode {
   html {
     color-scheme: dark;
