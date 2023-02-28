@@ -1,0 +1,25 @@
+@import 'variables';
+
+.container {
+  border: 1px solid red;
+  max-width: 255px;
+  height: 103px;
+  border-radius: 20px;
+}
+
+// export to use directly in modules
+:export {
+  lightBg: $light;
+  darkBg: $dark;
+  white: $white;
+  black: $black;
+  purple: $purple;
+  lightPurple: $light-purple;
+  softPurple: $soft-purple;
+  grey: $grey;
+  lightGrey: $light-grey;
+  darkGrey: $dark-grey;
+  blackGrey: $black-grey;
+  red: $red;
+  lightRed: $light-red;
+}

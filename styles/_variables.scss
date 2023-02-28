@@ -18,20 +18,3 @@ $font-size-sm: $base-font-size * 0.75 !default;
 $font-size-lg: $base-font-size * 1.25 !default;
 $font-size-xl: $base-font-size * 2 !default;
 $font-size-xxl: $base-font-size * 3 !default;
-
-// export to use directly in modules
-:export {
-  lightBg: $light;
-  darkBg: $dark;
-  white: $white;
-  black: $black;
-  purple: $purple;
-  lightPurple: $light-purple;
-  softPurple: $soft-purple;
-  grey: $grey;
-  lightGrey: $light-grey;
-  darkGrey: $dark-grey;
-  blackGrey: $black-grey;
-  red: $red;
-  lightRed: $light-red;
-}
