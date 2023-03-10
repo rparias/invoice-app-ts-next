@@ -1,4 +1,4 @@
-$light: #f8f8f8 !default;
+$light: #f8f8fb !default;
 $dark: #141625 !default;
 $white: #ffffff !default;
 $black: #0c0e16 !default;
@@ -12,9 +12,44 @@ $black-grey: #1e2139 !default;
 $red: #ec5757 !default;
 $light-red: #ff9797 !default;
 
+// color palette
+$colors: (
+  "light": $light,
+  "dark": $dark,
+  "black": $black,
+  "white": $white,
+  "purple": $purple,
+  "light-purple": $light-purple,
+  "soft-purple": $soft-purple,
+  "grey": $grey,
+  "light-grey": $light-grey,
+  "dark-grey": $dark-grey,
+  "black-grey": $black-grey,
+  "red": $red,
+  "light-red": $light-red,
+);
+
 // font sizes
 $base-font-size: 1rem !default;
 $font-size-sm: $base-font-size * 0.75 !default;
 $font-size-lg: $base-font-size * 1.25 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+
+// spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+// font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
 $font-size-xl: $base-font-size * 2 !default;
 $font-size-xxl: $base-font-size * 3 !default;
