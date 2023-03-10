@@ -1,5 +1,5 @@
-import Button from "@/components/Button/button"
 import Color from "@/components/Color/color"
+import { colors } from "@/data/static/colors"
 
 export default function DesignSystem() {
   return (
@@ -9,7 +9,15 @@ export default function DesignSystem() {
       </section>
       <section>
         <h2>Colors</h2>
-        <Color variableName="purple" hexValue="#7c5dfa" rgbValue="124, 93, 250" hslValue="252, 94, 67" />
+        <div className="row gap-2 justify-center">
+          {colors.map(color => {
+            return (
+              <div className="col-12-xs col-6-sm col-4-lg col-3-xl" key={color.variableName}>
+                <Color color={color} />
+              </div>
+            )
+          })}
+        </div>
       </section>
     </>
   )

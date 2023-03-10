@@ -1,10 +1,19 @@
 @import 'variables';
 
-.container {
-  border: 1px solid red;
+.mainContainer {
   max-width: 255px;
+}
+
+.colorContainer {
   height: 103px;
   border-radius: 20px;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
 }
 
 // export to use directly in modules
