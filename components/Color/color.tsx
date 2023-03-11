@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import styles from './colors.module.scss'
 
 type Props = {

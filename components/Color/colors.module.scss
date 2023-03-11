@@ -1,5 +1,3 @@
-@import 'variables';
-
 .mainContainer {
   max-width: 255px;
 }
@@ -14,21 +12,4 @@
     bottom: 1rem;
     left: 1rem;
   }
-}
-
-// export to use directly in modules
-:export {
-  lightBg: $light;
-  darkBg: $dark;
-  white: $white;
-  black: $black;
-  purple: $purple;
-  lightPurple: $light-purple;
-  softPurple: $soft-purple;
-  grey: $grey;
-  lightGrey: $light-grey;
-  darkGrey: $dark-grey;
-  blackGrey: $black-grey;
-  red: $red;
-  lightRed: $light-red;
 }
