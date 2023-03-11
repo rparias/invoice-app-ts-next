@@ -1,6 +1,16 @@
+@import 'globals/breakpoints';
+
 .typographyTitle {
-  font-size: 120px;
+  font-size: 16vw;
   font-weight: bold;
+
+  @include md {
+    font-size: 8vw;
+  }
+
+  @include breakpoint(1920px) {
+    font-size: 6vw;
+  }
 }
 
 .alphabet {
