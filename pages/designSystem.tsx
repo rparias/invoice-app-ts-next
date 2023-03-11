@@ -1,14 +1,23 @@
+import Image from 'next/image'
 import Color from "@/components/Color/color"
 import { colors } from "@/data/static/colors"
 
 export default function DesignSystem() {
   return (
-    <>
-      <section>
+    <div className="p-4">
+      <section className="row">
+      <Image
+            className="logo mr-2"
+            src="/images/logo.svg"
+            alt="App Logo"
+            width={40}
+            height={38}
+            priority
+          />
         <h1>Design System</h1>
       </section>
-      <section>
-        <h2>Colors</h2>
+      <section className='mt-4'>
+        <h2 className='text-grey'>Colors</h2>
         <div className="row gap-2 justify-center">
           {colors.map(color => {
             return (
@@ -19,6 +28,9 @@ export default function DesignSystem() {
           })}
         </div>
       </section>
-    </>
+      <section className='mt-4'>
+        <h2 className='text-grey'>Typography</h2>
+      </section>
+    </div>
   )
 }

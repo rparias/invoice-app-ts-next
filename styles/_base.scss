@@ -66,6 +66,14 @@ h4 {
   font-size: $font-size-sm;
 }
 
+.logo {
+  filter: invert(1);
+
+  @include darkMode {
+    filter: none;
+  }
+}
+
 @include darkMode {
   html {
     color-scheme: dark;
