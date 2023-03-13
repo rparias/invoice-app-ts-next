@@ -1,22 +1,25 @@
-import React, { ReactElement } from 'react'
+import React, { ReactNode } from 'react'
+import styles from './button.module.scss'
 
 type Props = {
-  children: string | ReactElement
+  children: ReactNode
   type?: 'button' | 'submit' | 'reset' | undefined
-  className?: string
+  design: 'primary' | 'danger' | 'gray-light' | 'gray-dark' | 'large' | 'with-icon'
   onClick?: () => void
 }
 
-export default function Button({ children, className, type, onClick }: Props) {
+export default function Button({ children, design, type, onClick }: Props) {
   return (
-    <button type={type} className={className} onClick={onClick}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={styles[design]}>
       {children}
     </button>
   )
 }
 
 Button.defaultProps = {
-  className: 'primary',
   type: 'button',
   onClick: () => null
 }

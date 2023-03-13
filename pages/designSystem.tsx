@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Colors from '@/templates/Colors/colors'
 import Typography from '@/templates/Typography/typography'
 import styles from '@/styles/DesignSystem.module.scss'
+import Buttons from '@/templates/Buttons/buttons'
 
 export default function DesignSystem() {
   return (
@@ -19,6 +20,7 @@ export default function DesignSystem() {
       </section>
       <Colors />
       <Typography />
+      <Buttons />
     </div>
   )
 }

@@ -66,6 +66,16 @@ h4 {
   font-size: $font-size-sm;
 }
 
+button {
+  color: $white;
+  cursor: pointer;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.3rem 2rem;
+}
+
 .logo {
   filter: invert(1);
 
