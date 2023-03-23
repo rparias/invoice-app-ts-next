@@ -6,7 +6,7 @@ import '@/styles/designSystem.scss'
 
 export default function DesignSystem() {
   return (
-    <div className="bg-white design-system__container">
+    <div className="design-system__container">
       <section className="row">
         <Image
           className="logo mr-2"
