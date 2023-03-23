@@ -1,0 +1,22 @@
+@import 'globals/breakpoints';
+
+.typography {
+  &__title {
+    font-size: 16vw;
+    font-weight: bold;
+  
+    @include md {
+      font-size: 8vw;
+    }
+  
+    @include breakpoint(1920px) {
+      font-size: 6vw;
+    }
+  }
+  
+  &__alphabet {
+    line-height: 39px;
+    letter-spacing: 8px;
+    overflow-wrap: break-word;
+  }
+}

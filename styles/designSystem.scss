@@ -1,0 +1,13 @@
+@import 'globals/breakpoints';
+
+.design-system {
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 60px;  
+
+    @include md {
+      padding: 80px 165px;
+    }
+  }
+}

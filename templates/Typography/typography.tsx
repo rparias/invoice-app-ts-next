@@ -1,6 +1,6 @@
 
 
-import styles from './typography.module.scss'
+import './typography.scss'
 
 export default function Typography() {
   return (
@@ -9,10 +9,10 @@ export default function Typography() {
       <div className="mt-3">
         <div className='row'>
           <div className="col-12-xs col-6-lg">
-            <p className={styles.typographyTitle}>Spartan</p>
+            <p className="typography__title">Spartan</p>
           </div>
           <div className="col-12-xs col-6-lg">
-            <p className={`${styles.alphabet} font-lg text-grey`}>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()</p>
+            <p className="typography__alphabet font-lg text-grey">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()</p>
           </div>
         </div>
         <div className="mt-3">

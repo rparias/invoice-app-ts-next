@@ -1,0 +1,39 @@
+@import 'globals/variables';
+
+.btn {
+  &__btn {
+    &--primary {
+      background-color: $purple;
+      &:hover {
+        background-color: $purple;
+      }
+    }
+    
+    &--danger {
+      background-color: $red;
+      &:hover {
+        background-color: $red;
+      }
+    }
+    
+    &--gray-light {
+      color: $grey;
+      background-color: #F9FAFE;
+      &:hover {
+        background-color: #F9FAFE;
+      }
+    }
+    
+    &--gray-dark {
+      background-color: #373B53;
+      &:hover {
+        background-color: #373B53;
+      }
+    }
+    
+    &--large {
+      padding: 1.3rem 8rem;
+      width: 100%;
+    }
+  }
+}

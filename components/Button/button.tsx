@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import styles from './button.module.scss'
+import './button.scss'
 
 type Props = {
   children: ReactNode
@@ -13,7 +13,7 @@ export default function Button({ children, design, type, onClick }: Props) {
     <button
       type={type}
       onClick={onClick}
-      className={styles[design]}>
+      className={`btn__btn--${design}`}>
       {children}
     </button>
   )
