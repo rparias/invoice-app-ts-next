@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Colors from '@/templates/Colors/colors'
 import Typography from '@/templates/Typography/typography'
 import Buttons from '@/templates/Buttons/buttons'
+import FormElements from '@/templates/FormElements/formElements'
 import '@/styles/designSystem.scss'
 
 export default function DesignSystem() {
@@ -21,6 +22,7 @@ export default function DesignSystem() {
       <Colors />
       <Typography />
       <Buttons />
+      <FormElements />
     </div>
   )
 }
