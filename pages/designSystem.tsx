@@ -10,7 +10,7 @@ export default function DesignSystem() {
       <section className="row">
         <Image
           className="logo mr-2"
-          src="/images/logo.svg"
+          src="/assets/logo.svg"
           alt="App Logo"
           width={40}
           height={38}
