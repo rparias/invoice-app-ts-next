@@ -54,8 +54,8 @@ export const colors = [
     hslValue: "0°, 80%, 63%"
   },
   {
-    variableName: "light-purple",
-    hexValue: "#9277FF",
+    variableName: "light-red",
+    hexValue: "#FF9797",
     rgbValue: "255, 151, 151",
     hslValue: "0°, 100%, 80%"
   },
