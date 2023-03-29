@@ -33,7 +33,8 @@ $colors: (
 
 // font sizes
 $base-font-size: 1rem !default;
-$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-xs: $base-font-size * 0.75 !default;
+$font-size-sm: $base-font-size * 0.875 !default;
 $font-size-lg: $base-font-size * 1.25 !default;
 $font-size-xl: $base-font-size * 2 !default;
 $font-size-xxl: $base-font-size * 3 !default;
@@ -48,10 +49,3 @@ $base-border-radius: 20px !default;
 
 // box-shadow
 $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
-
-// font sizes
-$base-font-size: 1rem !default;
-$font-size-sm: $base-font-size * 0.75 !default;
-$font-size-lg: $base-font-size * 1.5 !default;
-$font-size-xl: $base-font-size * 2 !default;
-$font-size-xxl: $base-font-size * 3 !default;

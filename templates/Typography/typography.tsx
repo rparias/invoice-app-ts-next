@@ -45,7 +45,7 @@ export default function Typography() {
 							<div>
 								<div className="mb-3">
 									<p className="text-grey mb-1">
-										Body 1 | Spartan Medium | 12px | 15px Line | -0,25 Spacing
+										Body 1 | Spartan Medium | 14px | 15px Line | -0,25 Spacing
 									</p>
 									<p>
 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
@@ -68,9 +68,9 @@ export default function Typography() {
 							<div>
 								<div className="mb-3">
 									<p className="text-grey mb-1">
-										Body 2 | Spartan Medium | 11px | 18px Line | -0,23 Spacing
+										Body 2 | Spartan Medium | 12px | 18px Line | -0,23 Spacing
 									</p>
-									<p>
+									<p className="small">
 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
 										Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id,
 										mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor
