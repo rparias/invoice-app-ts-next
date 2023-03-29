@@ -6,7 +6,8 @@ export const theme = {
 		input: {
 			padding: '17px',
 			font: {
-				weight: 500,
+				weight: 600,
+				size: '14px',
 			},
 		},
 		focus: {

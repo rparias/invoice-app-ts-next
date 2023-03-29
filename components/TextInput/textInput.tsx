@@ -1,6 +1,7 @@
 import { Grommet } from 'grommet';
 import { theme } from '@/styles/grommetTheme';
 import { TextInput as TextInputGrommet } from 'grommet';
+import './textInput.scss';
 
 type Props = {
 	id?: string | undefined;
@@ -13,17 +14,11 @@ export default function TextInput({ id, label, onChange, value }: Props) {
 	return (
 		<Grommet theme={theme}>
 			{!label ? null : (
-				<div className="mt-1 mb-1 text-soft-purple">
+				<div className="txt-input__label">
 					<label htmlFor={id}>{label}</label>
 				</div>
 			)}
-			<TextInputGrommet
-				value={value}
-				id={id}
-				onChange={onChange}
-				aria-label="Input Text"
-				className="text-input__txt-container"
-			/>
+			<TextInputGrommet value={value} id={id} onChange={onChange} aria-label="Input Text" />
 		</Grommet>
 	);
 }
