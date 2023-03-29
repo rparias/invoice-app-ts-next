@@ -18,5 +18,18 @@ export const theme = {
 				size: '1px',
 			},
 		},
+		hover: {
+			background: 'transparent',
+			color: '#7c5dfa',
+		},
+		selected: {
+			background: 'transparent',
+			color: '#7c5dfa',
+		},
+	},
+	select: {
+		icons: {
+			color: '#7c5dfa',
+		},
 	},
 };
