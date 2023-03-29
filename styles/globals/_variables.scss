@@ -15,20 +15,20 @@ $light-red: #ff9797 !default;
 
 // color palette
 $colors: (
-  "light": $light,
-  "dark": $dark,
-  "black": $black,
-  "white": $white,
-  "purple": $purple,
-  "light-purple": $light-purple,
-  "soft-purple": $soft-purple,
-  "grey": $grey,
-  "soft-grey": $soft-grey,
-  "light-grey": $light-grey,
-  "dark-grey": $dark-grey,
-  "black-grey": $black-grey,
-  "red": $red,
-  "light-red": $light-red,
+	'light': $light,
+	'dark': $dark,
+	'black': $black,
+	'white': $white,
+	'purple': $purple,
+	'light-purple': $light-purple,
+	'soft-purple': $soft-purple,
+	'grey': $grey,
+	'soft-grey': $soft-grey,
+	'light-grey': $light-grey,
+	'dark-grey': $dark-grey,
+	'black-grey': $black-grey,
+	'red': $red,
+	'light-red': $light-red,
 );
 
 // font sizes
@@ -47,7 +47,7 @@ $base-border-thickness: 1px !default;
 $base-border-radius: 20px !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // font sizes
 $base-font-size: 1rem !default;
