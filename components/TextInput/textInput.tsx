@@ -1,3 +1,5 @@
+import { Grommet } from 'grommet';
+import { theme } from '@/styles/grommetTheme';
 import { TextInput as TextInputGrommet } from 'grommet';
 
 type Props = {
@@ -9,7 +11,7 @@ type Props = {
 
 export default function TextInput({ id, label, onChange, value }: Props) {
 	return (
-		<>
+		<Grommet theme={theme}>
 			{!label ? null : (
 				<div className="mt-1 mb-1 text-soft-purple">
 					<label htmlFor={id}>{label}</label>
@@ -21,8 +23,7 @@ export default function TextInput({ id, label, onChange, value }: Props) {
 				onChange={onChange}
 				aria-label="Input Text"
 				className="text-input__txt-container"
-				style={{ padding: '16px' }}
 			/>
-		</>
+		</Grommet>
 	);
 }
