@@ -1,3 +1,4 @@
+import DateInput from '@/components/DateInput/dateInput';
 import Dropdown from '@/components/Dropdown/dropdown';
 import TextInput from '@/components/TextInput/textInput';
 
@@ -25,6 +26,7 @@ export default function FormElements() {
 				<div className="col-12-xs col-6-sm col-4-lg mt-2 mb-2 buttons__btn-container">
 					<div>
 						<p className="row justify-center text-grey mb-1">Date Picker</p>
+						<DateInput label="Issue Date" id="issue-date" />
 					</div>
 				</div>
 			</div>
