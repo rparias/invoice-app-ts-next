@@ -9,7 +9,7 @@
 ### Links
 
 - Solution URL: [GitHub](https://github.com/rparias/invoice-app-ts-next)
-- Live Site URL: [Vercel](https://invoice-app-ts-next-mepvjyua6-rparias.vercel.app/)
+- Live Site URL: [Vercel](https://invoice-app-ts-next-rparias.vercel.app/)
 
 ### Built with
 
