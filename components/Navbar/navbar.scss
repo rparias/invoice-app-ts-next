@@ -1,7 +1,24 @@
 @import 'globals/index';
 
 .navbar {
-	background-color: $black-grey;
 	height: 100%;
 	width: 100%;
+	background-color: $black-grey;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+
+	@include md {
+		flex-direction: column;
+	}
+
+	&__logo-container {
+		background-color: $light-purple;
+	}
+
+	&__icons-container {
+		background-color: $red;
+	}
 }
