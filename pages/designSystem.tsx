@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { ReactElement } from 'react';
 import Colors from '@/templates/Colors/colors';
 import Typography from '@/templates/Typography/typography';
 import Buttons from '@/templates/Buttons/buttons';
@@ -9,14 +9,6 @@ export default function DesignSystem() {
 	return (
 		<div className="design-system__container">
 			<section className="row">
-				<Image
-					className="logo mr-2"
-					src="/assets/logo.svg"
-					alt="App Logo"
-					width={40}
-					height={38}
-					priority
-				/>
 				<h1>Design System</h1>
 			</section>
 			<Colors />
@@ -26,3 +18,7 @@ export default function DesignSystem() {
 		</div>
 	);
 }
+
+DesignSystem.getLayout = function getLayout(page: ReactElement) {
+	return page;
+};
