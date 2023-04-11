@@ -93,14 +93,6 @@ button {
 	height: 48px;
 }
 
-.logo {
-	filter: invert(1);
-
-	@include darkMode {
-		filter: none;
-	}
-}
-
 @include darkMode {
 	html {
 		color-scheme: dark;

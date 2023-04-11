@@ -2,11 +2,11 @@
 
 .typography {
 	&__title {
-		font-size: 16vw;
+		font-size: 12vw;
 		font-weight: bold;
 
 		@include md {
-			font-size: 8vw;
+			font-size: 6vw;
 		}
 
 		@include breakpoint(1920px) {

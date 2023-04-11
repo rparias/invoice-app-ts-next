@@ -9,7 +9,7 @@
 		'navbar navbar'
 		'main main';
 
-	@include md {
+	@include lg {
 		grid-template-columns: 103px 1fr;
 		grid-template-rows: 100vh;
 

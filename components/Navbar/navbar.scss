@@ -1,7 +1,7 @@
 @import 'globals/index';
 
 .navbar {
-	height: 100%;
+	height: 72px;
 	width: 100%;
 	background-color: $black-grey;
 	display: flex;
@@ -9,13 +9,32 @@
 	justify-content: space-between;
 	align-items: center;
 	color: white;
+	position: fixed;
 
 	@include md {
+		height: 80px;
+	}
+
+	@include lg {
 		flex-direction: column;
+		height: 100%;
+		width: 103px;
+		border-radius: 0 20px 20px 0;
 	}
 
 	&__logo-container {
 		background-color: $light-purple;
+		height: 100%;
+		aspect-ratio: 1/1;
+		border-radius: 0 20px 20px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include lg {
+			height: unset;
+			width: 100%;
+		}
 	}
 
 	&__icons-container {
