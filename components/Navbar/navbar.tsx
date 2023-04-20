@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import useWindowSize from '@/hooks/useWindowSize';
+import { useWindowSize, useDarkMode } from 'usehooks-ts';
 
 import './navbar.scss';
 
@@ -7,6 +7,7 @@ const lgScreenSize = 960;
 
 export default function Navbar() {
 	const { width } = useWindowSize();
+	const { isDarkMode, toggle } = useDarkMode();
 	const isMobile = width < lgScreenSize;
 
 	return (
@@ -23,9 +24,9 @@ export default function Navbar() {
 			</div>
 			<div className="navbar__icons-container">
 				<div className="navbar__dark-light-switch">
-					<button>
+					<button onClick={toggle}>
 						<Image
-							src="/assets/icon-moon.svg"
+							src={isDarkMode ? '/assets/icon-sun.svg' : '/assets/icon-moon.svg'}
 							alt="Switch dark/light mode"
 							width={20}
 							height={20}
