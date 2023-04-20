@@ -38,6 +38,20 @@
 	}
 
 	&__icons-container {
-		background-color: $red;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0 1rem;
+
+		@include lg {
+			flex-direction: column;
+			padding: 1rem 0;
+		}
+	}
+
+	&__dark-light-switch {
+		margin: 0;
+		padding: 0 3rem;
+		background: transparent;
 	}
 }
