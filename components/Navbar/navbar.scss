@@ -42,45 +42,43 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 1.2rem;
 		height: 100%;
 
 		@include lg {
 			flex-direction: column;
-			padding: 1rem 0;
 			height: auto;
 			width: 100%;
 		}
 	}
 
 	&__dark-light-switch {
+		height: 100%;
+		padding: 0 1rem;
 		display: flex;
 		align-items: center;
-		height: 100%;
 		border-right: 1px solid #494e6e;
 
 		@include lg {
 			width: 100%;
+			padding: 1rem 0;
 			justify-content: center;
 			border-right: unset;
 			border-bottom: 1px solid #494e6e;
-			padding: 0.7rem 0;
 		}
 
 		button {
 			margin: 0;
-			padding: 0 1.2rem;
+			padding: 0;
 			background: transparent;
 		}
 	}
 
 	&__user-picture {
-		padding-left: 1.2rem;
+		margin: 0 1rem;
 
 		@include lg {
 			width: 100%;
-			padding-top: 1rem;
-			padding-left: unset;
+			margin: 1.5rem 0;
 			display: flex;
 			justify-content: center;
 		}
