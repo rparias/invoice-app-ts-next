@@ -7,6 +7,8 @@ const lgScreenSize = 960;
 
 export default function Navbar() {
 	const { width } = useWindowSize();
+	const isMobile = width < lgScreenSize;
+
 	return (
 		<nav className="navbar">
 			<div className="navbar__logo-container">
@@ -14,29 +16,33 @@ export default function Navbar() {
 					className="logo"
 					src="/assets/logo.svg"
 					alt="App Logo"
-					width={width < lgScreenSize ? 28 : 40}
-					height={width < lgScreenSize ? 26 : 38}
+					width={isMobile ? 28 : 40}
+					height={isMobile ? 26 : 38}
 					priority
 				/>
 			</div>
 			<div className="navbar__icons-container">
-				<button className="navbar__dark-light-switch">
+				<div className="navbar__dark-light-switch">
+					<button>
+						<Image
+							src="/assets/icon-moon.svg"
+							alt="Switch dark/light mode"
+							width={20}
+							height={20}
+							priority
+						/>
+					</button>
+				</div>
+				<div className="navbar__user-picture">
 					<Image
-						src="/assets/icon-moon.svg"
-						alt="Switch dark/light mode"
-						width={20}
-						height={20}
+						className="br-full"
+						src="/assets/image-avatar.jpg"
+						alt="App Logo"
+						width={isMobile ? 32 : 40}
+						height={isMobile ? 32 : 40}
 						priority
 					/>
-				</button>
-				<Image
-					className="navbar__user-picture br-full"
-					src="/assets/image-avatar.jpg"
-					alt="App Logo"
-					width={width < lgScreenSize ? 32 : 40}
-					height={width < lgScreenSize ? 32 : 40}
-					priority
-				/>
+				</div>
 			</div>
 		</nav>
 	);
